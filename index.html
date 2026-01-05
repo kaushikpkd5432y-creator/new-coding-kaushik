@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chatting World | Join Telegram</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: #000; /* pure black */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .wrapper {
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 38px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+      background: linear-gradient(90deg, #1da1f2, #00f2ea);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .pfp {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 30px;
+      border: 3px solid rgba(255,255,255,0.8);
+      box-shadow: 0 0 25px rgba(29,161,242,0.6);
+    }
+
+    .join-btn {
+      display: inline-block;
+      padding: 16px 45px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 999px; /* cylindrical */
+      background: linear-gradient(135deg, #1da1f2, #00f2ea);
+      box-shadow: 0 10px 30px rgba(29,161,242,0.4);
+      transition: all 0.25s ease;
+    }
+
+    .join-btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 15px 40px rgba(29,161,242,0.7);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Chatting World</h1>
+
+    <!-- Group Profile Picture -->
+    <img src="pfp.jpg" alt="Chatting World PFP" class="pfp" />
+
+    <!-- Telegram Button (link hidden behind button) -->
+    <a href="https://t.me/+lPZ6tEBiVtthY2E1" class="join-btn">
+      Click to Join
+    </a>
+  </div>
+</body>
+</html>
